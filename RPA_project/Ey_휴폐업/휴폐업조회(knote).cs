@@ -1,5 +1,4 @@
-package 휴폐업;
-//	모든 App close
+// 모든 App close
 App.closeAll("iexplore");
 App.closeAll("IEDriverServer");
 App.closeAll("chrome");

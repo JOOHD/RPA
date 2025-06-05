@@ -1,4 +1,3 @@
-package 휴폐업;
 //	모든 App close
 App.closeAll("iexplore");
 App.closeAll("IEDriverServer");
@@ -159,9 +158,7 @@ def kislineProcess(no, name, companyNo) {
         kisline.find('//*[@id=searchView][@class="btn_search_total]').click();
 
         // 기업명 클릭해서 상세 페이지로 이동
-        // 2019.01.18 예외추가 - 임시 (왼쪽사항)
         // 검색결과 건수가 0건일 때 사항
-        // 2019.01.29 예외 추가 - 검색시 아무값도 안 나올 때 조회결과 없음을 안찍어서 오른쪽 조건 추가함
         // 검색결과 첫번째에 검색어 제안 : 다른 검색어를 찾을 수 없습니다. 문구 떴을 때  체크(오른쪽사항)
         if(!kisline.exists('//div[@id="cont"]/div[2]/h3/em', 5000) || kisline.exists('//div[@id="cont"]/div[1]/dl[1]/dt[1]', 5000)) {
             sheet = excel.sheet(2);
