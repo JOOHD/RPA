@@ -32,7 +32,7 @@ var statusSheet = statusExcel.sheet(1);
 readStatusFile();
 
 var kisline = Browser.open('kisline.com', 'IE');
-// 2022.02.23(화) 정인기 보안스크립트 종료하는 코드
+// 보안스크립트 종료하는 코드
 try{
     for(var i : 0..5){
         kisline.alert("Accept");
